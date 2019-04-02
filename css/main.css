@@ -1,0 +1,168 @@
+/*############Include a local font###########*/
+@font-face {
+	font-family: 'Hylia Serif Beta';
+	src: url("../font/hyliaserifBeta-regular.otf");
+}
+h2{
+	margin: 10px;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Hylia Serif Beta';
+	color: #294822; 
+}
+body{
+	background: url("../images/zeldabg4.jpg") fixed;
+	background-size: cover;
+}
+/*############Div with flat design#############*/
+.flat{
+	background-color: #efeff0;
+	width: 80vw;
+	margin: 10px auto;
+	margin-top: 70px;
+	box-shadow: 8px 5px 5px #ccc;
+}
+nav{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	background-color: #294822;
+	box-shadow: 8px 5px 5px gray;
+	animation: nav 3s ease-in-out forwards;
+}
+nav a{
+	animation: appear 3s ease-in-out forwards;
+}
+a{
+	margin: 5px 15px;
+	padding: 5px;
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+}
+#logo{
+	display: inline-block;
+	float: none;
+	margin: 5px
+	width: 200px;
+	height: 100px;
+}
+header{
+	text-align: center;
+
+	height: 20%;
+	width: 100%;
+}
+iframe{
+	float: right;
+}
+img{
+		float: left;
+		margin: 15px;
+}
+p{
+	padding: 10px 20px;
+}
+.rightimg{
+	float: right;
+}
+@keyframes appear{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.08;
+	}
+	60%{
+		opacity: 0.4;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes nav{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+footer{
+	text-align: center;
+	background-color: #294822;
+	color: white;
+	box-shadow: 8px 5px 5px #043700
+}
+table{
+	padding: 30px;
+	margin: 20px;
+}
+li{
+	margin: 5px 50px;
+}
+
+/*################Parallax ###########*/
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 800px;
+	height: 800px;
+	position: relative;
+	margin: 10px auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+close:hover { background: #00d9ff; }
+
+
+nav a:hover{
+	background-color: #efeff0;
+	color: #294822;
+	box-shadow: box-shadow: 10px 10px 10px white;
+}
